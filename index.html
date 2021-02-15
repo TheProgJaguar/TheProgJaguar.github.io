@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Robot</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    canvas {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <h1><mark><em>Robot di Daniele Abate</em></mark></h1>
+
+  <script>
+    function setup() {
+      createCanvas(1000, 800);
+    }
+
+    function draw() {
+      background(163, 163, 163);
+
+      line(500, 0, 500, 800);
+
+      // antenne del Robot
+      line(mouseX + 25, mouseY - 50, mouseX + 25, mouseY);
+      line(mouseX + 65, mouseY - 50, mouseX + 65, mouseY);
+
+      // cerchi per antenne
+      // colore rosso R G B
+      fill(255, 0, 0);
+      circle(mouseX + 25, mouseY - 50, 10);
+      circle(mouseX + 65, mouseY - 50, 10);
+
+      // testa del Robot
+      // colore giallo R G B
+      fill(255, 255, 0);
+      square(mouseX, mouseY, 90);
+
+      // occhi del Robot
+      // colore nero R G B
+      fill(0, 0, 0);
+      circle(mouseX + 28, mouseY + 20, 10);
+      circle(mouseX + 62, mouseY + 20, 10);
+
+      // naso del Robot
+      // colore marrone R G B
+      fill(150, 75, 0);
+      rect(mouseX + 35, mouseY + 35, 20, 30);
+
+      // bocca del Robot
+      // colore rosa R G B
+      fill(255, 192, 203);
+      ellipse(mouseX + 45, mouseY + 77, 20, 5);
+
+      // corpo del Robothttps://altadefinizione.style/
+      // colore arancione R G B
+      fill(255, 102, 0);
+      rect(mouseX - 55, mouseY + 90, 200, 250);
+
+      // gambe del Robot
+      // colore verde R G B
+      fill(0, 255, 0);
+      rect(mouseX - 30, mouseY + 340, 25, 75);
+      rect(mouseX + 95, mouseY + 340, 25, 75);
+
+      // braccia del Robot
+      // colore verde R G B
+      fill(0, 255, 0);
+      rect(mouseX - 80, mouseY + 145, 25, 135);
+      rect(mouseX + 145, mouseY + 145, 25, 135);
+
+      // piedi del Robot
+      // colore blu R G B
+      fill(0, 0, 255);
+      rect(mouseX - 45, mouseY + 415, 40, 20);
+      rect(mouseX + 95, mouseY + 415, 40, 20);
+    }
+  </script>
+</body>
+
+</html>
