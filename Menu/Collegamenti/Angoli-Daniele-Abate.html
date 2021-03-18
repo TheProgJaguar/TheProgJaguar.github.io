@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Angoli</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    canvas {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <h1><mark><em>Angoli Daniele Abate</em></mark></h1>
+  <script>
+    function setup() {
+      createCanvas(500, 550);
+      angleMode(DEGREES);
+    }
+
+    function draw() {
+      background(0, 255, 0);
+
+      //colore bianco R G B
+      fill(255, 255, 255);
+      circle(70, 70, 50);
+
+      //colore rosso R G B
+      //arco con ampiezza di 30 gradi
+      fill(255, 0, 0);
+      arc(70, 70, 50, 50, 0, 30);
+      text("ampiezza 30°", 40, 120);
+
+      //colore bianco R G B
+      fill(255, 255, 255);
+      circle(180, 70, 50);
+
+      //colore rosso R G B
+      //arco con ampiezza di 45 gradi
+      fill(255, 0, 0);
+      arc(180, 70, 50, 50, 0, 45);
+      text("ampiezza 45°", 150, 120);
+
+      //colore bianco R G B
+      fill(255, 255, 255);
+      circle(290, 70, 50);
+
+      //colore rosso R G B
+      //arco con ampiezza di 60 gradi
+      fill(255, 0, 0);
+      arc(290, 70, 50, 50, 0, 60);
+      text("ampiezza 60°", 260, 120);
+
+      //colore bianco R G B
+      fill(255, 255, 255);
+      circle(70, 170, 50);
+
+      //colore rosso R G B
+      //arco con ampiezza di 90 gradi
+      fill(255, 0, 0);
+      arc(70, 170, 50, 50, 0, 90);
+      text("ampiezza 90°", 40, 220);
+
+      //colore bianco R G B
+      fill(255, 255, 255);
+      circle(180, 170, 50);
+
+      //colore rosso R G B
+      //arco con ampiezza di 3180 gradi
+      fill(255, 0, 0);
+      arc(180, 170, 50, 50, 0, 180);
+      text("ampiezza 180°", 150, 220);
+
+      //colore bianco R G B
+      fill(255, 255, 255);
+      circle(290, 170, 50);
+
+      //colore rosso R G B
+      //arco con ampiezza di 270 gradi
+      fill(255, 0, 0);
+      arc(290, 170, 50, 50, 0, 270);
+      text("ampiezza 270°", 260, 220);
+
+      //colore bianco R G B
+      fill(255, 255, 255);
+      circle(400, 120, 50);
+
+      //colore rosso R G B
+      //arco con ampiezza di 360 gradi
+      fill(255, 0, 0);
+      arc(400, 120, 50, 50, 0, 360);
+      text("ampiezza 360°", 370, 170);
+
+      //colore blu R G B
+      fill(0, 0, 255);
+      text("ANGOLI DELLA STESSA AMPIEZZA MISURATI IN SENSO ANTIORARIO", 40, 280);
+
+      //colore bianco R G B
+      fill(255, 255, 255);
+      circle(70, 345, 50);
+
+      //colore rosso R G B
+      //arco in senso antiorario con ampiezza di 30 gradi
+      fill(255, 0, 0);
+      arc(70, 345, 50, 50, 330, 0);
+      text("30° antiorario", 35, 395);
+
+      //colore bianco R G B
+      fill(255, 255, 255);
+      circle(180, 345, 50);
+
+      //colore rosso R G B
+      //arco in senso antiorario con ampiezza di 45 gradi
+      fill(255, 0, 0);
+      arc(180, 345, 50, 50, 315, 0);
+      text("45° antiorario", 145, 395);
+
+      //colore bianco R G B
+      fill(255, 255, 255);
+      circle(290, 345, 50);
+
+      //colore rosso R G B
+      //arco in senso antiorario con ampiezza di 60 gradi
+      fill(255, 0, 0);
+      arc(290, 345, 50, 50, 300, 0);
+      text("60° antiorario", 255, 395);
+
+      //colore bianco R G B
+      fill(255, 255, 255);
+      circle(70, 445, 50);
+
+      //colore rosso R G B
+      //arco in senso antiorario con ampiezza di 90 gradi
+      fill(255, 0, 0);
+      arc(70, 445, 50, 50, 280, 0);
+      text("90° antiorario", 35, 495);
+
+      //colore bianco R G B
+      fill(255, 255, 255);
+      circle(180, 445, 50);
+
+      //colore rosso R G B
+      //arco in senso antiorario con ampiezza di 180 gradi
+      fill(255, 0, 0);
+      arc(180, 445, 50, 50, 180, 0);
+      text("180° antiorario", 145, 495);
+
+      //colore bianco R G B
+      fill(255, 255, 255);
+      circle(290, 445, 50);
+
+      //colore rosso R G B
+      //arco in senso antiorario con ampiezza di 270 gradi
+      fill(255, 0, 0);
+      arc(290, 445, 50, 50, 90, 0);
+      text("270° antiorario", 255, 495);
+
+      //colore bianco R G B
+      fill(255, 255, 255);
+      circle(400, 395, 50);
+
+      //colore rosso R G B
+      //arco in senso antiorario con ampiezza di 360 gradi
+      fill(255, 0, 0);
+      arc(400, 395, 50, 50, 360, 0);
+      text("360° antiorario", 365, 445);
+    }
+  </script>
+</body>
+
+</html>
